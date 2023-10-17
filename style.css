@@ -72,9 +72,7 @@ a:hover{
 }
 
 #contact {
-    border-bottom: 1px solid var(--hotmag);
-    border-top: 1px solid var(--hotmag);
-    background-color: var(--plum);
+    font-family: var(--sans);/*remove-->*/
     width: 400px;
     text-align: center;
     margin:  0 auto;
@@ -106,6 +104,11 @@ nav {
     padding: 1rem;
 }
 
+.nameicone{
+
+    font-family: var(--mono);
+}
+
 nav ul{
     list-style-type: none;
     padding: 0;
@@ -122,15 +125,81 @@ nav li:first-child{
     text-align: center;
 }
 
+
 nav a {
     font-family: var(--sans);
-}
-nav a {
     text-decoration: none;
     color: var(--white);
     display: block;
 }
-nav a:hover {
+
+nav [class*="fa-"]{
+    font-size: 150%;
+    color: var(--aqua);
+}
+
+
+nav h1 [class*="fa-"]{
+    font-size: 100%;
+    color: var(--aqua);
+}
+
+nav a:hover, [class*="fa-"]:hover {
     color: var(--magenta);
     transform: scale(1.08);
+}
+
+.button{
+    background-color: var(--magenta);
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.button:hover {
+    color: var(--white);
+    background-color: var(--hotmag);
+}
+
+@media (min-width:850px) {
+    nav{
+
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    nav li:first-child{
+        flex-basis: auto;
+        text-align: left;
+        margin-right: auto;
+    }     
+    
+}
+footer{
+    text-align: center;
+    padding: 4rem 0;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 2rem 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 4rem;
+    font-size: 3rem;
+}
+
+footer p:last-child{
+    margin-top:  3rem;
+}
+
+footer  h2 {
+    font-size: 4rem;
+    font-weight: normal;
+}
+
+footer a {
+    text-decoration: none;
+    font-family: var(--mono);
+    font-size: 3rem;
 }
