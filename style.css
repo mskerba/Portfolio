@@ -28,9 +28,11 @@ body{
     color: var(--white);
     font-size: var(--font-size);
 }
+
 section{
     /* background-color: blue; */
 }
+
 h1, h2, h3 {
     margin: 0;
 }
@@ -97,6 +99,38 @@ a:hover{
     padding: 2%;
     border-radius: 10px;
 }
-nav a{
+
+nav {
+    font-family: var(--mono);
+    font-size: 80%;
+    padding: 1rem;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav li:first-child{
+    flex-basis: 100%;
+    text-align: center;
+}
+
+nav a {
+    font-family: var(--sans);
+}
+nav a {
     text-decoration: none;
+    color: var(--white);
+    display: block;
+}
+nav a:hover {
+    color: var(--magenta);
+    transform: scale(1.08);
 }
