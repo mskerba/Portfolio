@@ -47,7 +47,9 @@ a:hover{
 }
 
 #intro {
-    padding-bottom: 10rem;
+    max-width: 1200px;
+    padding: 4rem 1rem 10rem 1rem;
+    margin: 0 auto ;
 }
 
 #intro p {
@@ -71,6 +73,30 @@ a:hover{
     font-weight: normal;
 }
 
+.section-dkblue {
+    background-color: var(--dkblue);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section-plum {
+    background-color: var(--plum);
+}
+
 #contact {
     font-family: var(--sans);/*remove-->*/
     width: 400px;
@@ -89,19 +115,11 @@ a:hover{
     font-weight: normal;
 }
 
-#contact a {
-    text-decoration: none;
-    font-family: var(--mono);
-    color: var(--white);
-    background-color: var(--magenta);
-    padding: 2%;
-    border-radius: 10px;
-}
 
 nav {
     font-family: var(--mono);
     font-size: 80%;
-    padding: 1rem;
+    padding: 4rem 1rem;
 }
 
 .nameicone{
@@ -149,10 +167,12 @@ nav a:hover, [class*="fa-"]:hover {
     transform: scale(1.08);
 }
 
-.button{
+.button {
+    text-decoration: none;
     background-color: var(--magenta);
     padding: 0.5rem;
     border-radius: 5px;
+    color: var(--white);
 }
 
 .button:hover {
@@ -203,3 +223,9 @@ footer a {
     font-family: var(--mono);
     font-size: 3rem;
 }
+
+.gradient {
+    height: 3px;
+    background: linear-gradient(90deg, rgba(255,23,228,1) 0%, rgba(134,251,251,1) 100%);
+}
+
