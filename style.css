@@ -77,13 +77,81 @@ a:hover{
     background-color: var(--dkblue);
 }
 
+#projects {
+    padding: 4rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: calc(2.5rem * 1.5);
+}
+
+#projects h3 {
+    color: var(--aqua);
+}
+
+#projects h4 {
+    font-size: 1rem;
+    font-family:  var(--mono);
+    margin: 0;
+}
+
+.blackbox {
+    background-color: var(--black);
+    border-radius: 10px;
+    padding: 1rem;
+    font-size: 1rem;
+    color: var(--white);
+    line-height: 1.5;
+}
+
+#projects ul{
+    display: flex;
+    list-style-type: none;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    gap: 1rem;
+}
+
+#projects img {
+    margin: 2rem 0 4rem 0;
+    padding: 1rem  ;
+    border-top: 1px solid var(--aqua);
+    border-left: 1px solid var(--aqua);
+    border-radius: 25px;
+}
 
 
+img {
+    width: 100%;
+}
 
-
-
-
-
+@media (min-width: 550px )
+{
+    article {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        gap: 1rem;
+    }
+    img {
+        grid-column: 1/6;
+        grid-row: 1/2;
+    }
+    .text {
+        grid-column: 5/11;
+        grid-row: 1/2;
+        order: 2;
+        text-align: right;
+    }
+    #projects ul {
+        justify-content: right;
+    }
+}
 
 
 
@@ -127,7 +195,7 @@ nav {
     font-family: var(--mono);
 }
 
-nav ul{
+nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
